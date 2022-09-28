@@ -9,67 +9,68 @@
 </head>
 <body>
     <div class="topnav">
-        <a class="title_link" href="#">Chris Murphy</a>
+        <a class="title_link" href="index.html">Chris Murphy</a>
         <nav>           
             <ul class="nav_links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#singing">Singing</a></li>
                 <li><a href="#code">Code</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#singing">Singing</a></li>
             </ul>
+            <img class="burger"src="img/menu-icon.svg" alt="open navigation menu">
         </nav>
+        <script src="navbar.js"></script>
     </div>
-    <div class="title_block">
-        <img class="photo" src="C:\Users\Chris Murphy\Documents\Coding Work\chrismurphy\img\Portrait cropped white background grayscale.jpg" alt="black and white portrait of Chris Murphy">
-        <div class ="introduction">
-            <h1>Chris Murphy</h1><br>
-            <h3>Singer and Programmer</h2><br>
-            <p>Hello and welcome to my site this is Chris Murphy and I'm currently trying to use flex grid</p>
+    <div class="main-content">        
+        <div class="title-block">
+            <div class ="introduction">
+                <h1>Chris Murphy</h1><br>
+                <h3>Singer and Programmer</h2><br>
+                <p>Hi I'm Chris Murphy an aspiring software developer and expeiernced baritone. I'm interested in the way software can be used in creative and interesting ways to help all kinds of people engage with technology in ways they didn't think they could.</p>
+            </div>
+            <img class="photo" src="img\Portrait cropped white background.jpg" alt="black and white portrait of Chris Murphy">
+        </div>
+        <div class="features">
+            <section class="About" id="about">
+                <h1>About</h1><br>
+                <p>Chris Murphy is a singer, educator and programmer who has a passion for classical music and clean code. After graduating from the University of York Chris moved to Oxford to persue a career in singing. As a singer Chris has performed in numerous operas, oratorios and in a variety of different choirs.</p> 
+                <p> During the coronavirus pandemic Chris rekindled his childhood love of programming and following a period of intraspection has decided to switch to persue a career in computer programming. Whislt I am still singing in a freelance capacity I am hoping that I can bring my creative flare to new projects and to use many of the transferrable skills I learnt whilst singing, acting and teaching in my new career path. This site is a hub for all of his projects, from singing to coding and everything inbetween. Who knows maybe I'll manage to get in something about my love of cricket or even baking!</p>
+            </section>
+
+            <section class="code" id="code">
+                <div class="code-text">
+                <h1>Code</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iusto vero! Eos, fugit repellendus, omnis quidem, maxime commodi laboriosam tempore illo suscipit consequuntur nemo aliquam architecto ipsum eligendi. Saepe, voluptate.
+                    </p>
+                </div>
+                <a href="/pages/code.html" class="button"> My blog</a>
+
+            </section>
+
+            <section class="singing" id="singing">
+                <div class="singing-text">
+                    <h1>Singing</h1><br>
+                    <p>After studying at the University of York, Chris has been working as a professional singer for four years. Chris is experienced in all types of classical singing including Choral, consort, oratorio and opera.</p>
+                    <p>Feel free to listen to the short clip of me singing the solo in Herbert Howell's A Spotless Rose in a performance with Christ Church Cathedral in Christmas of 2021. I am still working as a freelance singer and am availible for booking using the contact form below.</p>
+                 </div>
+                <div class="listen">
+                    <iframe width="426" height="240" src="https://www.youtube.com/embed/aoa63bhovsw?start=2496&end=2556;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
         </div>
     </div>
-    <div class="About">
-        <h1>About</h1><br>
-        <p>Chris Murphy is a singer, educator and programmer who has a passion for classical music and clean code. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero maiores, enim culpa corrupti eveniet sed nam exercitationem qui aut excepturi explicabo! Aliquam illo ut delectus cumque quod nam itaque!</p>
-    </div>
-
-    <section class="programming">
-       <h1>Programming</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iusto vero! Eos, fugit repellendus, omnis quidem, maxime commodi laboriosam tempore illo suscipit consequuntur nemo aliquam architecto ipsum eligendi. Saepe, voluptate.</p>
-    </section>
-
-    <section class="singing">
-        <h1>Singing</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt omnis, obcaecati facilis, ex libero eligendi doloribus tempora qui velit modi porro laborum odit itaque incidunt esse distinctio odio dolorem magnam?
-        </p>
-        <div class="listen">
-            <iframe width="1904" height="800" src="https://www.youtube.com/embed/aoa63bhovsw?start=2496&end=2556;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h1>Contact me</h1>
-        <form action="">
-            <label class="name">Name:
-                <input type="text" id="name">
-            </label>
-
-            <label class="email">Email:
-                <input type="text" id="email">
-            </label>
-
-            <label message="message"> Message:
-                <textarea name="" id="message"></textarea>
-            </label>
-        </form>
-    </section>
-
     <footer>
-        <p>Follow me on social media</p>
+        <h3>
+            Chris Murphy
+        </h3>
+        <p>Follow me on social media<br></p>
         <div class="social-icons">
-            <img class="social-icon" src="img/twitter.svg" alt="twitter">
-            <img class="social-icon" src="img/github.svg" alt="github">
+            <a href="https://twitter.com/cstephenmurphy">
+                <img class="social-icon" src="img/twitter.svg" alt="twitter" height="40px">
+            </a>
+            <a href="https://github.com/SomeDudeChris">
+                <img class="social-icon" src="img/github.svg" alt="github" height="40px">
+            </a>
         </div>
     </footer>
 </body>

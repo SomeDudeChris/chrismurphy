@@ -1,1 +1,306 @@
-@import 'modules/all'
+//Color variables
+
+$bg-color: #FFFFFF;
+$bg-gradient: linear-gradient(#ffffff, #e6e6e6);
+$secondary-color: #e6e6e6;
+$txt-color: #939393;
+$sec-txt-color: #494949;
+$highlight-color: #bdbdbd;
+$tert-color: #505050;
+$accent: #0031D3;
+$gray-transparant: rgba(189, 189, 189, 0.815);
+
+//Font variables
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap');
+
+$ff-ss: 'Barlow', sans-serif; //font family sans serif
+$fw-n: 400; //font weight normal
+$fw-b: 900; //font weight bold
+
+body {
+    color: $txt-color;
+    font-family: $ff-ss;
+    margin: 0px;
+    background-color: $bg-color;
+    //background-image: $bg-gradient;
+}
+
+h1 {
+    color: $sec-txt-color;
+}
+
+
+.topnav {
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding: 0px;
+    margin: 0%;
+    min-height: 4rem;
+    justify-content: space-around;
+    background-color: $secondary-color;
+    a {
+        color: $tert-color;
+        text-decoration: none;
+        transition: color 0.5s;
+        
+    }
+    :hover {
+        color: $highlight-color;
+    }
+}
+
+.nav_links {
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+    a {
+        padding: 2rem;
+        text-decoration: none;
+    }
+}
+
+.main-content {
+    margin: 0px;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0px;
+    min-height: 4rem;
+    background-color: $secondary-color;
+    h3 {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        a {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+    
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.code {
+    a {
+        font-family: $ff-ss;
+        font-weight: $fw-b;
+        border: none;
+        background-color: $secondary-color;
+        color: $txt-color;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        padding: 1rem;
+        height: 1rem;
+        width: 4rem;
+        :hover {
+            background-color: $tert-color;
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media screen and (min-width:769px) {        
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 4rem;
+    }
+
+    .section {
+        display: flex;
+        padding: 3rem;
+    }
+
+    .title-block {
+        display: flex;
+        padding: 1rem;
+        max-width: 100%;
+        justify-content: center;
+        .introduction {
+            padding: 2rem;
+            p {
+                min-width: none;
+                max-width: 700px;
+            }
+        }
+        .photo {
+            height: fit-content;
+            max-width: 38%;
+            min-width: 30%;
+            border-radius: 8px;
+        }
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 1rem;
+    }
+
+    .About {
+        padding: 2rem;
+    }
+
+    .singing {
+        max-width: 100%;
+        display: flex;
+        //justify-content: center;
+        .singing-text {
+            padding: 2rem;
+            justify-content: left;
+            p{
+                min-width: none;
+                max-width: 700px;
+            }
+        }
+        .listen {
+            justify-content: right;
+            margin: auto;
+            display: flex;
+            iframe {
+                justify-content: right;
+                position: relative;
+            }
+        }
+    }
+
+    .code {
+        display: flex;
+        justify-content: center;
+        //padding-bottom: 3rem;
+        .code-text {
+            padding: 2rem;
+        }
+        p {
+            min-width: none;
+            max-width: 700px;
+        }
+        a {
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .topnav {
+        padding: 3rem;
+        z-index: 9999;
+    }
+    .topnav .title_link {
+        font-size: 20px
+    }
+    .nav_links {
+        position: absolute;
+        right: 0px;
+        height: 94vh;
+        top: 2rem;
+        background-color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        justify-content: space-around;
+        font-size: 20px;
+        z-index: 20;
+    }
+    .burger {
+        display: block;
+    }
+    
+    .main-content {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        .features {
+            h1 {
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+    .title-block {
+        display: flex;
+        flex-direction: column;
+        .photo {
+            max-width: fit-content;
+            border-radius: 8px;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .About {
+        margin-bottom: 2rem;
+    }
+    .singing {
+        .listen {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .code {
+        margin-bottom: 2rem;
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+    }
+
+    .singing {
+        margin-bottom: 2rem;
+    }
+}
+
+.nav-active {
+    margin-top: 4rem;
+    transform: translateX(0%);
+    background-color: $secondary-color;
+    color: $tert-color;
+    z-index: 7000;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    } to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
