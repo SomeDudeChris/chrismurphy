@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap");
 body {
+  font-size: 20;
   color: #939393;
   font-family: "Barlow", sans-serif;
   margin: 0px;
@@ -19,7 +20,7 @@ h1 {
   margin: 0%;
   min-height: 4rem;
   justify-content: space-around;
-  background-color: #e6e6e6;
+  background-color: #e0e0e0;
 }
 .topnav a {
   color: #505050;
@@ -42,7 +43,7 @@ h1 {
 
 .main-content {
   margin: 0px;
-  padding: 2rem;
+  padding: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,9 +53,10 @@ footer {
   align-items: center;
   padding: 0px;
   min-height: 4rem;
-  background-color: #e6e6e6;
+  background-color: #e0e0e0;
 }
 footer h3 {
+  color: #494949;
   display: flex;
   justify-content: center;
   padding-top: 1rem;
@@ -82,7 +84,7 @@ footer .social-icons a {
   font-family: "Barlow", sans-serif;
   font-weight: 900;
   border: none;
-  background-color: #e6e6e6;
+  background-color: #e0e0e0;
   color: #939393;
   transition-duration: 0.4s;
   text-decoration: none;
@@ -95,6 +97,11 @@ footer .social-icons a {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1920px) {
+  .title-block {
+    max-width: 80%;
+  }
+}
 @media screen and (min-width: 769px) {
   .main-content {
     display: flex;
@@ -137,6 +144,7 @@ footer .social-icons a {
   }
   .About {
     padding: 2rem;
+    max-width: 1400px;
   }
   .singing {
     max-width: 100%;
@@ -191,7 +199,7 @@ footer .social-icons a {
     right: 0px;
     height: 94vh;
     top: 2rem;
-    background-color: #e6e6e6;
+    background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +259,7 @@ footer .social-icons a {
 .nav-active {
   margin-top: 4rem;
   transform: translateX(0%);
-  background-color: #e6e6e6;
+  background-color: #e0e0e0;
   color: #505050;
   z-index: 7000;
 }
