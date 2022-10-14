@@ -284,4 +284,32 @@ footer .social-icons a {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+.blog-introduction {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.blog-introduction h1 {
+  align-items: center;
+}
+.blog-introduction p {
+  margin: auto;
+  max-width: 800px;
+}
+
+.Placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

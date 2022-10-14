@@ -315,3 +315,35 @@ footer {
         transform: translateX(0px);
     }
 }
+
+//Code page specific sass
+
+.blog-introduction {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    h1 {
+        align-items: center;
+    }
+    p {
+        margin: auto;
+        max-width: 800px;
+    }
+
+}
+
+.Placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 800px;
+}
+
+canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
