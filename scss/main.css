@@ -286,17 +286,60 @@ footer .social-icons a {
   }
 }
 .blog-introduction {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  margin: auto;
-}
-.blog-introduction h1 {
-  align-items: center;
+  margin: 2rem;
+  height: 40vh;
 }
 .blog-introduction p {
-  margin: auto;
   max-width: 800px;
+}
+.blog-introduction #cursor {
+  font-weight: 100;
+}
+
+.blog-posts .blog-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: #494949;
+}
+.blog-posts .blog-items li {
+  display: flexbox;
+  max-width: 350px;
+  border-style: solid;
+  border-color: #494949;
+  list-style: none;
+  margin: 1rem;
+  background-color: #e6e6e6;
+  -webkit-transition: 0.5s;
+}
+.blog-posts .blog-items li :hover {
+  color: black;
+  border: #bdbdbd;
+}
+.blog-posts .blog-items li a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-posts .blog-items li img {
+  max-width: 350px;
+  min-width: 10%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.blog-posts .blog-items li h3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.blog-posts .blog-items li p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .Placeholder {

@@ -19,6 +19,11 @@ $fw-n: 500; //font weight normal
 $fw-b: 900; //font weight bold
 $fs: 20;
 
+//pixel variables
+
+$bordRad: 20px;
+$boxWidth: 350px;
+
 body {
     font-size: $fs;
     color: $txt-color;
@@ -319,18 +324,65 @@ footer {
 //Code page specific sass
 
 .blog-introduction {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    h1 {
-        align-items: center;
-    }
+    margin: 2rem;
+    height: 40vh;
     p {
-        margin: auto;
         max-width: 800px;
     }
+    #cursor {
+        font-weight: 100;
+    }
 
+}
+
+.blog-posts {
+    .blog-items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: $sec-txt-color;
+        li {
+            display: flexbox;
+            max-width: $boxWidth;
+            border-style: solid;
+            border-color: $sec-txt-color;
+            //border-radius: $bordRad;
+            list-style: none;
+            margin: 1rem;
+            background-color: #e6e6e6;
+            -webkit-transition: 0.5s;
+            :hover {
+                color: black;
+                border: #bdbdbd;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            img {
+                max-width: $boxWidth;
+                min-width: 10%;
+                height: fit-content;
+                //border-top-left-radius: $bordRad;
+                //border-top-right-radius: $bordRad;
+            }
+            h3 {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            p {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+        }
+    }
 }
 
 .Placeholder {

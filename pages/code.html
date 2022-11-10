@@ -4,9 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code</title>
-    <link  href="../scss/main.css" rel="stylesheet">`
+    <link  href="../scss/main.css" rel="stylesheet">
     <script src="../scripts/p5.min.js"></script>
     <script src="../scripts/test-script.js"></script>
+    <script src="../scripts/cursor.js"></script>
 </head>
 <body>
     <div class="topnav">
@@ -22,11 +23,43 @@
         <script src="../scripts/navbar.js"></script>
     </div>
     <div class="blog-introduction">
-        <h1>Welcome to my blog</h1>
-        <p>This is a place in which I write about some of my coding projects that I have undertaken. The point being a place to display some of my talents and to write about what I learned from each experience.</p>
+        <h1>
+            Coding Blog.
+            <span id="cursor">|</span>
+        </h1>
+        <p>Read and explore some of my projects that I have created.</p>
     </div>
-    <div class="Placeholder">
-        <h3>The blog is still under construction, please come back soon once I have a blog homepage. In the meantime please enjoy this flying terrain which I made</h3>
+    <!-- <div class="side-bar">
+        <h3>Some of my favorites</h3>
+        <ul>
+            <li></li>
+            once I have some more blog posts I'd like to create a side-bar which would be used for navigation.
+        </ul>
+    </div> -->
+    <div class="blog-posts">
+        <ul class="blog-items">
+            <li class="post-00">
+                <a href="blog-posts/post-00.html">
+                    <img class="thumbnail" src="../img/thumbnails/Screenshot of landing page.png">
+                    <h3>Creating this site</h3>
+                    <p>My first foray into web design was this site your reading this on. Read more here...</p>
+                </a>
+            </li>
+            <!-- <li class="post-01">
+                <a href="blog-posts/post-01.html">
+                    <img class="thumbnail" src="../img/thumbnails/37620005.JPG">
+                    <h3>This is my second test blog item</h3>
+                    <p>A short paragraph about the first post in this blog with some text that goes on and on</p>
+                </a>
+                </li>
+            <li class="post-02">
+                <a href="blog-posts/post-02.html">
+                    <img class="thumbnail" src="../img/thumbnails/37620005.JPG">
+                    <h3>This is my third test blog item</h3>
+                    <p>A short paragraph about the first post in this blog with some text that goes on and on</p>
+                </a>
+            </li> -->
+        </ul>
     </div>
     <div id="test-sketch">
 
